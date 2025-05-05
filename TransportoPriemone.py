@@ -45,7 +45,7 @@ class TransportoPriemone(ABC):
                                 int(data.get('vietu_sk', 8))
                             ))
         except FileNotFoundError:
-            # Jei failo nėra, sukursime jį vėliau
+
             pass
         return priemones
     
