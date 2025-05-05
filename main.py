@@ -102,10 +102,9 @@ def vykdyti_pasirinkima(pasirinkimas):
     return False
 
 def main():
-    # Inicijuojame pradinius duomenis
+    
     duomenys = DuomenuValdymas()
     
-    # Sukuriame kelias pradines transporto priemones, jei failas tuščias
     if not TransportoPriemone.gauti_visas():
         from Automobilis import Automobilis
         from Mikroautobusas import Mikroautobusas
@@ -114,7 +113,6 @@ def main():
         Automobilis("Volkswagen", "Golf", 2019, 45).išsaugoti()
         Mikroautobusas("Mercedes", "Sprinter", 2021, 80, vietu_sk=12).išsaugoti()
     
-    # Pagrindinis programos ciklas
     while True:
         rodyti_meniu()
         pasirinkimas = input("Pasirinkite veiksmą (1-5): ").strip()
