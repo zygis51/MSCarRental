@@ -8,7 +8,7 @@ class DuomenuValdymas:
         return cls._instance
     
     def _init_data(self):
-        # Inicijuojame tuščius failus, jei jų nėra
+        
         for filename in ['transporto_priemones.txt', 'klientai.txt', 'nuomos.txt']:
             try:
                 open(filename, 'x', encoding='utf-8').close()
